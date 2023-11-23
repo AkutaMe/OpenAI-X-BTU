@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "OpenAI X BTU",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab", "storage", "declarativeNetRequest", "scripting"],
+  "host_permissions": [
+    "https://www.virustotal.com/",
+    "https://api.openai.com/",
+    "https://jsdelivr.net/"
+  ],
+  "icons": {
+    "16": "icon1.png",
+    "48": "icon1.png",
+    "128": "icon1.png"
+  }
+}

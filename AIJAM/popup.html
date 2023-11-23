@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="path/to/axios.min.js"></script>
+    <title>OpenAI Defender</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div id="container">
+      <img id="logo" src="icon23.png" alt="GPT-4 Anti-Phishing Extension Logo" />
+      <h1 id="title">AI web defender</h1>
+      <h2 id="subtitle">Detect URL/Email threats</h2>
+      <div id="buttons">
+        <button
+        class="button button-url"
+        id="scanUrlBtn">
+          Scan URL
+        </button>
+        <button
+          class="button button-file"
+          id="scanFileBtn">
+          Scan Email
+        </button>
+      </div>
+
+      <div id="scan-url-section" style="display: none">
+        <label for="urlInput">Enter URL:</label>
+        <input type="text" id="urlInput" placeholder="https://example.com" />
+        <div id="chat-ui-url" class="chat-ui"></div>
+        <form id="chat">
+          <input type="text" id="chatInput" placeholder="Enter your question here" />
+        </form>
+      </div>
+
+      <!-- Scan File Section -->
+      <div id="scan-file-section" style="display: none">
+        <input type="text"></input>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
